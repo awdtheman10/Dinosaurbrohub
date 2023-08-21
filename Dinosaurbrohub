@@ -1,3 +1,4 @@
+getgenv().SecureMode = true
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 
@@ -27,6 +28,20 @@ local Window = Rayfield:CreateWindow({
        Key = {"dinosaurbrohubontop"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
+ Rayfield:Notify({
+   Title = "Info",
+   Content = "Hey! You're using a version of Dinosaurbrohub thats in beta! Welcome to the early testers. To delete the GUI, tap the V button on your keyboard.",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Info",
+         Callback = function()
+         print("Information available.")
+      end
+   },
+},
+})
 
  local Tab = Window:CreateTab("Walkspeed & stuff", 4483362458) -- Title, Image
  local Section = Tab:CreateSection("Walkspeed")
@@ -76,3 +91,35 @@ local Slider = Tab:CreateSlider({
    Callback = function(v)
        game.Players.LocalPlayer.Character.Humanoid.Health = v
    end,})
+
+   local Keybind = Tab:CreateKeybind({
+      Name = "Delete GUI",
+      CurrentKeybind = "V",
+      HoldToInteract = false,
+      Flag = "DeleteGUI", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+      Callback = function(Keybind)
+         Rayfield:Destroy()
+         Rayfield:Notify({
+            Title = "Hey!",
+            Content = "GUI Has been deleted. Execute the GUI again to re-access the GUI.",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+               Ignore = {
+                  Name = "GUI Deleted",
+                  Callback = function()
+                  print("The GUI has been deleted.")
+               end
+            },
+         },
+         }) -- The function that takes place when the keybind is pressed
+      -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
+      end,
+   })
+
+   local Button = Tab:CreateButton({
+      Name = "Remove Nametag",
+      Callback = function()
+      game.Players.LocalPlayer.Character.Head.Nametag.Frame.Visible = false-- The function that takes place when the button is pressed
+      end,
+   })
