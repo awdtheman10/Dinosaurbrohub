@@ -48,7 +48,7 @@ local Window = Rayfield:CreateWindow({
 
  local Slider = Tab:CreateSlider({
     Name = "Walkspeed",
-    Range = {5, 600},
+    Range = {16, 600},
     Increment = 0.5,
     Suffix = "Walkspeed",
     CurrentValue = 10,
@@ -60,7 +60,7 @@ local Window = Rayfield:CreateWindow({
 
  local Slider = Tab:CreateSlider({
     Name = "JumpPower",
-    Range = {12, 500},
+    Range = {16, 500},
     Increment = 0.2,
     Suffix = "JumpPower",
     CurrentValue = 10,
