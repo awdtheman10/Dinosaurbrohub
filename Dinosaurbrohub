@@ -76,4 +76,4 @@ local Slider = Tab:CreateSlider({
    Flag = "Health", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(v)
        game.Players.LocalPlayer.Character.Humanoid.Health = v
-   end,
+   end,})
