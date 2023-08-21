@@ -51,7 +51,7 @@ local Window = Rayfield:CreateWindow({
     Range = {16, 600},
     Increment = 0.5,
     Suffix = "Walkspeed",
-    CurrentValue = 10,
+    CurrentValue = 16,
     Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(v)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
@@ -63,7 +63,7 @@ local Window = Rayfield:CreateWindow({
     Range = {16, 500},
     Increment = 0.2,
     Suffix = "JumpPower",
-    CurrentValue = 10,
+    CurrentValue = 16,
     Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(v)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
@@ -74,7 +74,7 @@ local Window = Rayfield:CreateWindow({
    Range = {0, 360},
    Increment = 1,
    Suffix = "Gravity",
-   CurrentValue = 10,
+   CurrentValue = 196.3,
    Flag = "Gravity", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(v)
        game.Workspace.Gravity = v
@@ -83,7 +83,7 @@ local Window = Rayfield:CreateWindow({
 
 local Slider = Tab:CreateSlider({
    Name = "Health",
-   Range = {0, 1900},
+   Range = {1, 1000},
    Increment = 0.5,
    Suffix = "HP",
    CurrentValue = 10,
@@ -631,4 +631,14 @@ local Slider = Tab:CreateSlider({
    })
 
 
-   
+   local Button = OtherUniversalsTab:CreateButton({
+      Name = "Infinite jump (to stop, rejoin)",
+      Callback = function()
+         local infjmp = true
+game:GetService("UserInputService").jumpRequest:Connect(function()
+    if infjmp then
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass"Humanoid":ChangeState("Jumping")
+    end
+end)
+      end,
+   })
