@@ -608,7 +608,7 @@ local Slider = Tab:CreateSlider({
 
    local CreditsTab = Window:CreateTab("Credits", 4483362458) -- Title, Image
    local Button = CreditsTab:CreateButton({
-      Name = "Dinosaurbro",
+      Name = "Dinosaurbro - The Developer of the script.",
       Callback = function()
       -- The function that takes place when the button is pressed
       end,
