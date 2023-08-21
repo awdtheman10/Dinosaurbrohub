@@ -613,3 +613,22 @@ local Slider = Tab:CreateSlider({
       -- The function that takes place when the button is pressed
       end,
    })
+
+
+
+   local OtherUniversalsTab = Window:CreateTab("Other amazing work by others", 4483362458) -- Title, Image
+   local Button = OtherUniversalsTab:CreateButton({
+      Name = "Infinite yield by Edge",
+      Callback = function()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- The function that takes place when the button is pressed
+      end,
+   })
+   local Button = OtherUniversalsTab:CreateButton({
+      Name = "Lightning hub by Elilxqr1",
+      Callback = function()
+         loadstring(game:HttpGet(('https://pastebin.com/raw/CSC0Ky7Z'),true))() -- The function that takes place when the button is pressed
+      end,
+   })
+
+
+   
