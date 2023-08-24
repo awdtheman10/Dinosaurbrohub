@@ -8,5 +8,5 @@ local placeId = 6553871117
 if placeId == 6553871117 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Sonic.EXE%3A%20The%20Disaster',true))()
 else
-    loadstrin(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
 end
