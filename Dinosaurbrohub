@@ -1,3 +1,18 @@
+-- Get the current place ID
+local placeId = 6553871117
+
+-- Replace "YOUR_EXPECTED_PLACE_ID" with the place ID you want to check against
+local placeId = 6553871117
+
+-- Compare the current place ID with the expected place ID
+if placeId == 6553871117 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Sonic.EXE%3A%20The%20Disaster',true))()
+else
+    print("This is a different game.")
+end
+
+
+
 getgenv().SecureMode = true
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
