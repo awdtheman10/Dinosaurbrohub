@@ -10,3 +10,17 @@ if placeId == 6553871117 then
 else
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
 end
+
+
+-- Get the current place ID
+local placeId = 6778844213
+
+-- Replace "YOUR_EXPECTED_PLACE_ID" with the place ID you want to check against
+local placeId = 6778844213
+
+-- Compare the current place ID with the expected place ID
+if placeId == 6778844213 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Dinosaurbrohub(ERT)',true))()
+else
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
+end
