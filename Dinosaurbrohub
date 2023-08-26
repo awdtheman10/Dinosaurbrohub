@@ -7,5 +7,5 @@ elseif placeId == 6778844213 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Dinosaurbrohub(ERT)',true))()
 else
     -- Code to run for any other place ID
-    print("Running default code.")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
 end
