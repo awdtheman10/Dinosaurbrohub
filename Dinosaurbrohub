@@ -5,7 +5,8 @@ if placeId == 6553871117 then
        loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Sonic.EXE%3A%20The%20Disaster',true))()
 elseif placeId == 6778844213 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Dinosaurbrohub(ERT)',true))()
-else
+elseif placeId == 6403373529 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
     -- Code to run for any other place ID
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
 end
