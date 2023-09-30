@@ -2,13 +2,13 @@ local placeId = game.PlaceId
 
 if placeId == 6553871117 then
     -- Code to run for the first place ID
-       loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Sonic.EXE%3A%20The%20Disaster',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Sonic.EXE%3A%20The%20Disaster',true))()
 elseif placeId == 6778844213 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Dinosaurbrohub(ERT)',true))()
 elseif placeId == 6403373529 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
 elseif placeId == 11520107397 then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
-else    -- Code to run for any other place ID
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
+elseif placeId == 5490351219 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Clicker%20Madness',true))()
 end
