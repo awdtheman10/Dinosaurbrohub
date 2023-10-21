@@ -6,9 +6,11 @@ if placeId == 6553871117 then
 elseif placeId == 6778844213 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Dinosaurbrohub(ERT)',true))()
 elseif placeId == 6403373529 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/DinoUI%20(Slap%20Battles)',true))()
 elseif placeId == 11520107397 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Battles%20BETA',true))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/DinoUI%20(Slap%20Battles)',true))()
 elseif placeId == 5490351219 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Clicker%20Madness',true))()
+    elseif placeId == 9426795465 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Royale.luau',true))()
 end
