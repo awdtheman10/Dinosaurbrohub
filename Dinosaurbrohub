@@ -13,4 +13,6 @@ elseif placeId == 5490351219 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Clicker%20Madness',true))()
     elseif placeId == 9431156611 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Royale.luau',true))()
+else
+print("game no support")
 end
