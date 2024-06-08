@@ -15,6 +15,9 @@ elseif placeId == 5490351219 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Slap%20Royale.luau',true))()
 elseif placeId == 16389395869 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/a%20dusty%20trip%20(alpha)",true))()
+elseif placeId == 1215581239 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Dinosaurbrohub-ERT-/main/Doomspire%20Brickbattle%20(OP)'))()
 else
-print("game no support")
+print("game no support, using universal")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/awdtheman10/Universal-Dinosaurbrohub/main/Universal'))()
 end
